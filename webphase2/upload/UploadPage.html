@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload</title>
+  <link rel="stylesheet" href="UploadPagecss.css">
+</head>
+
+<body>
+      <div class="loading-indicator" id="loadingIndicator">
+        <div class="spinner"></div>
+    </div>
+  <nav class="navbar navbar-expand-lg fixed-top">
+
+    <div class="container">
+      <a class="navbar-brand" href="../index.html"><img src="img/Group2.png"></a>
+      
+      <!-- <div class="collapse navbar-collapse" id="main">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            
+          </ul>
+        </div> -->
+    </div>
+  </nav>
+
+
+  <!-- Home Section -->
+  <div class="home d-flex justify-content-center align-items-center">
+    <div class="second-home d-flex justify-content-center align-items-center">
+      <div class="inside-home text-center text-light">
+      </div>
+    </div>
+  </div>
+
+
+  
+
+  <div id="uploadcard" class="whitecard">
+    <div id="slider">
+      <input type="radio" name="slider" id="slide1" checked>
+      <input type="radio" name="slider" id="slide2">
+      <input type="radio" name="slider" id="slide3">
+      <div id="slides">
+        <div id="overflow">
+          <div class="inner">
+            <div class="slide slide_1">
+              <div class="slide-content">
+                <h2>Slide 1</h2>
+                <img src="img/1.png" alt="Image for slide 1">
+              </div>
+            </div>
+            <div class="slide slide_2">
+              <div class="slide-content">
+                
+                <img src="img/2.png" alt="Image for slide 2">
+              </div>
+            </div>
+            <div class="slide slide_3">
+              <div class="slide-content">
+               
+                <img src="img/3.png" alt="Image for slide 3">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="controls">
+        <label for="slide1"></label>
+        <label for="slide2"></label>
+        <label for="slide3"></label>
+      </div>
+      <div id="bullets">
+        <label for="slide1"></label>
+        <label for="slide2"></label>
+        <label for="slide3"></label>
+      </div>
+      <br>
+      <form id="uploadForm"enctype="multipart/form-data">
+          
+        <div class="file-upload">
+          <div class="file-select">
+            <div class="file-select-button" id="fileName">Choose a photo</div>
+            <div class="file-select-name" id="noFile">No photo chosen...</div>
+            <input type="file" name="chooseFile" id="imageFile">
+          </div>
+        </div>
+        <br>
+          
+        <button id="uploadButton" class="upload-button" type="submit" name="submit">Upload</button>
+        <p id="loadingMessage" style="display: none;">Please wait...</p>
+      </form>
+      <a href="../index.html"><button class="backbtn">Back </button></a>
+
+    </div>
+  </div>
+    
+    
+     <div id="resultcard" class="whitecard">
+
+    <div id="slider">
+      <div class="main-content">
+        <section class="hero">
+          <div class="container">
+            <h1>The Medical Result of your skin Cancer appears here</h1>
+            <p>*Note that the scan result is not a diagnosis. To obtain an accurate diagnosis and a recommendation for treatment - <b>consult your doctor.</b></p>
+          </div>
+        </section>
+
+        <section class="upload-section">
+          <div class="container">
+            <div class="cancer-box">
+            </div>
+          </div>
+          <br><br><br>
+        </section>
+
+        <p class="note">Skin Cancer Type :</p>
+        <h2 id="result" class="cancertype"></h2>
+        <br><br>
+
+        <a href="#" onclick="refreshPage()" class="scanagainbtn">Scan Again</a>
+
+        <a href="..//index.html"><button class="backbtn">Back </button></a>
+      </div>
+    </div>
+  </div>
+    
+    
+    <div class="loader-container">
+    <img src="img/loader.gif" alt="">
+</div>
+   
+
+    
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
+<script src="upload.js"></script>
+    
+</body>
+
+</html>

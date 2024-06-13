@@ -1,0 +1,806 @@
+/* :root{
+    --baby-purple:rgb(184, 138, 236);
+    --dark-purple:rgb(49, 23, 78);
+} */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    /* height: 10000px; */
+}
+
+/* start navbar */
+
+.navbar {
+    background: #073775;
+    padding: 0px 0 0px;
+    width: 100%;
+    z-index: 99;
+}
+
+/* .navbar .container a.navbar-brand {
+    padding-top: 20px;
+    font-size: 17px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+} */
+
+.navbar .container .navbar-brand img{
+    width: 35rem;
+    height: auto;
+    display: block;
+    margin: -2rem -1rem -1rem -7rem;
+    max-width: 100%;
+}
+
+.navbar .container .nav-item a {
+    margin-right: 20px;
+    color: #fff;
+    padding-top: 23px;
+    padding-bottom: 10px;
+    line-height: 20px;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.navbar .container .nav-item a.active {
+    position: relative;
+
+}
+
+.navbar .container .nav-item a.active:after {
+    content: '';
+    width: 45px;
+    height: 1.9px;
+    background-color: white;
+    position: absolute;
+    bottom: 9px;
+    left: 7px;
+}
+
+.navbar .navbar-toggler {
+    color: white;
+    border: none;
+    font-size: 22px;
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+
+
+
+/* end navbar */
+
+/* start home  */
+
+.home {
+    background-image: url(../images/tt.jpeg);
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    background-size: cover;
+    background-position: 0px 0px;
+    position: relative;
+}
+
+.second-home {
+    /* background-color: rgba(255, 255, 255, 0.2); */
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    background-size: cover;
+    background-position: 0px 0px;
+}
+
+.inside-home {
+    position: absolute;
+    top: 250px;
+    width: 100%;
+    height: 40%;
+}
+
+.inside-home h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.inside-home h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 100;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.icons-holder a.btn {
+    font-size: 14px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none !important;
+    list-style: none !important;
+    outline: none !important;
+}
+
+.icons-holder a.btn:hover,
+.icons-holder a.btn:focus {
+    box-shadow: none;
+    text-decoration: none;
+    text-decoration: none !important;
+    list-style: none !important;
+    outline: none !important;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* end home */
+
+/* start about */
+/* .about{
+    height: 700px;
+    background-color: rgb(238, 195, 247);
+    position: relative;
+    padding: 1px;
+}
+.about .container .about1{
+    background-color: black;
+    width: 30%;
+    height: 540px;
+    position: absolute;
+    top: 100px; 
+    left: 100px;
+}
+.about .container .about2{
+    background-color: rgb(179, 6, 6);
+    width: 50%;
+    height: 510px; 
+    position: absolute;
+    top: 100px;
+    right: 70px;
+}  */
+
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    padding: 10;
+} */
+
+h1 {
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.checkmark {
+    color: rgb(51, 175, 72);
+}
+
+button {
+    background-color: rgb(255, 47, 47);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(224, 49, 49);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.red-arrow {
+    font-size: 24px;
+    color: rgb(255, 47, 47);
+    margin-right: 10px;
+}
+
+
+
+
+
+
+.about h3 {
+    font-weight: 800;
+    margin-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
+
+
+
+
+.btn1 {
+    background-color: rgb(29, 27, 27);
+    color: white;
+    border: 1px solid rgb(29, 27, 27);
+    border-radius: 5px;
+    position: absolute;
+    top: 420px;
+    padding: 10px 30px;
+    font-size: 13px;
+}
+
+.btn2 {
+    background-color: white;
+    color: black;
+    border: 1px solid rgb(29, 27, 27);
+    border-radius: 5px;
+    position: absolute;
+    top: 420px;
+    left: 160px;
+    padding: 10px 25px;
+    font-size: 13px;
+
+    width: 170px;
+}
+
+.btn1:hover {
+    background-color: white;
+    color: black;
+}
+
+.btn2:hover {
+    background-color: rgb(29, 27, 27);
+    color: white;
+}
+
+/* end about */
+
+/* start services */
+
+.ser-bg {
+    background-color: white;
+}
+
+.container.services {
+
+    background-color: white;
+}
+
+.ser-bg .container.services .container .row {
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    padding-top: 60px;
+}
+
+.ser-bg .container.services .container .row .first {
+    background-color: white;
+}
+
+.ser-bg .container.services .container .row .second {
+    background-color: white;
+}
+
+.ser-bg .container.services .container .row .third {
+    background-color: white;
+
+}
+
+.services h3 {
+    font-weight: 900;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 30px;
+}
+
+.ser-bg .container.services .container a {
+    font-size: 50px;
+    margin-bottom: 20px;
+    width: 60px;
+    height: 70px;
+    line-height: 100px;
+    background: #bacbe0;
+    border-radius: 50%;
+    border-width: 2px;
+    padding: 20px;
+}
+
+.ser-bg .container.services .container a:hover {
+
+    background: #9cb9db;
+    color: white;
+
+}
+
+.services h2 {
+    margin-bottom: 15px;
+    font-weight: 800;
+    font-size: 30px;
+
+    color: #061f46;
+}
+
+.services h6 {
+    word-spacing: 2px;
+    font-size: 20px;
+    line-height: 1.6;
+    color: rgb(9, 6, 49);
+}
+
+.services p {
+    word-spacing: 2px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgb(80, 78, 80);
+    box-sizing: border-box;
+
+}
+
+
+/* end services */
+
+
+/* start port  */
+
+.port {
+    height: 900px;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.port .container .main-title h3 {
+    font-weight: 900;
+    font-size: 40px;
+    position: relative;
+    display: inline-block;
+    z-index: 4;
+}
+
+.port .container ul {
+    color: rgb(7, 4, 8);
+}
+
+.port .container ul li.active {
+
+    position: relative;
+
+}
+
+.port .container ul li.active:after {
+    content: '';
+    width: 25px;
+    height: 1.9px;
+    background-color: rgb(15, 13, 13);
+    position: absolute;
+    bottom: 9px;
+    left: 7px;
+}
+
+.port .container li {
+    border-radius: 40%;
+    font-size: larger;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+
+
+}
+
+.port .container .box {
+    width: 310px;
+    height: 270px;
+    background-color: rgb(236, 229, 229);
+    margin-left: 30px
+}
+
+
+/* end port  */
+
+/* start test */
+
+.test {
+    height: 650px;
+    background-color: #f7f7f7;
+    display: flex;
+}
+
+.test h3 {
+    font-weight: 900;
+    font-size: 40px;
+    color: black;
+    position: absolute;
+    bottom: 480px;
+}
+
+.carousel-indicators [data-bs-target] {
+    background: black;
+    width: 10px;
+    height: 5px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin-bottom: 150px;
+}
+
+.test .move {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 320px;
+    left: 140px;
+}
+
+.test .move p {
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+    color: #748182;
+    word-spacing: 2px;
+}
+
+.test .move h6 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 30px 0 5px;
+}
+
+.test .move span {
+    font-size: 12px;
+    font-weight: 600;
+    color: #888;
+    margin-bottom: 30px;
+}
+
+/* end test  */
+
+/* start counts  */
+
+.counts {
+    height: 360px;
+    background-color: white;
+}
+
+.counts .row {
+    padding-top: 100px;
+}
+
+.counts .count1 .count1-img,
+.counts .count2 .count2-img,
+.counts .count3 .count3-img,
+.counts .count4 .count4-img {
+    font-size: 30px;
+    margin-bottom: 23px;
+    font-weight: 200;
+}
+
+.counts h3 {
+    font-weight: 900;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.counts p {
+    font-weight: 600;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+    color: #5c5d5e;
+
+}
+
+/* end counts  */
+
+/* start blog  */
+
+.blog {
+    height: 700px;
+    margin-top: 10px;
+}
+
+.blog h2 {
+    margin-bottom: 70px;
+    font-weight: 800;
+    font-size: 30px;
+
+    color: #061f46;
+}
+
+.blog img:hover {
+    transform: scale(1.04, 1.04);
+    transition: 0.1s transform;
+}
+
+.blog h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(71, 71, 71);
+}
+
+.blog p {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgb(99, 98, 98);
+}
+
+.blog span {
+    font-family: 'Poppins', sans-serif;
+    color: #343434;
+    font-weight: 400;
+    font-size: 16px;
+    position: relative;
+}
+
+.blog span:after {
+    position: absolute;
+    content: '';
+    width: 80px;
+    height: 1.9px;
+    background-color: rgb(15, 13, 13);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+/* end blog  */
+
+/* start contact */
+
+
+.contact {
+    height: 500px;
+    position: relative;
+
+}
+
+
+.contact h2 {
+    font-weight: 800;
+    font-size: 38px;
+    color: #061f46;
+    text-align: center;
+    margin-bottom: 80px;
+    margin-top: 10px;
+}
+
+
+.contact a {
+    font-size: 25px;
+    margin-bottom: 20px;
+    width: 60px;
+    height: 70px;
+    line-height: 70px;
+    background-color: #eef2f3;
+    border-radius: 50%;
+    border-width: 2px;
+    padding: 20px;
+}
+
+.contact a:hover {
+    background: #c2d1e2;
+    color: white;
+
+
+}
+
+.contact h6 {
+    margin-bottom: 15px;
+    font-weight: 800;
+    font-size: 18px;
+    color: rgb(9, 6, 49);
+}
+
+.contact p {
+    word-spacing: 2px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #576364;
+}
+
+/* end contact */
+
+/* start of end  */
+
+.end {
+
+    width: 100%;
+    height: 90px;
+    text-align: center;
+    padding-top: 40px;
+    background: #052457;
+}
+
+.end p {
+    font-size: 13px;
+    word-spacing: 2px;
+    line-height: 1.6;
+    margin-top: -10px;
+    font-size: 15px;
+    color: #8aa2a3;
+}
+
+
+.loginPage {
+    height: 100vh;
+    padding-top: 15vh;
+}
+
+.logincard {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 38, 70);
+    max-height: 550px;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+    margin: auto;
+    width: 40%;
+    margin-bottom: 250px;
+
+}
+
+.logincard:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, .7);
+
+}
+
+.loginform {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    padding: 24px;
+}
+
+.loginform img {
+    height: 30px;
+    margin: auto 10px;
+}
+
+#chk {
+    display: none;
+    margin-bottom: 200px;
+}
+
+
+.login {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.login label {
+    margin: 25px 0 5% 0;
+}
+
+label {
+    color: #fff;
+    font-size: 2rem;
+    justify-content: center;
+    display: flex;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 50px;
+    transition: .5s ease-in-out;
+}
+
+.input {
+    width: 100%;
+    height: 40px;
+    background: #e0dede;
+    padding: 20px;
+    margin: 5px 0;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+}
+
+.register {
+    background: #eee;
+    border-radius: 25px;
+    transform: translateY(20%);
+    border-top: 2px solid rgb(255, 50, 14);
+    transition: .8s ease-in-out;
+    cursor: pointer;
+}
+
+.register-btn {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(255, 50, 14);
+    color: white;
+    padding: 10px 150px;
+    margin: 30px 0;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+
+}
+
+.register-btn button:hover {
+
+    background-color: rgb(255, 255, 255);
+    color: rgb(69, 69, 69);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/*#chk:checked ~ .register {
+  transform: translateY(-60%);
+}
+
+#chk:checked ~ .register label {
+  transform: scale(1);
+  margin: 10% 0 5%;
+}
+
+#chk:checked ~ .login label {
+  transform: scale(.6);
+  margin: 5% 0 5%;
+}  */
+
+.loginform button {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(255, 50, 14);
+    color: white;
+    padding: 10px 150px;
+    margin: 30px 0;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.loginform button:hover {
+
+    background-color: rgb(255, 255, 255);
+    color: rgb(69, 69, 69);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.loader-container{
+    position: fixed;
+    top:0; left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10000;
+    background: #f8fbff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader-container.active{
+    display: none;
+}
+
+.loader-container img{
+    height: 50rem;
+}
+
+
+
+/* end of end  */
+
+.par{
+    text-align: justify;
+}
